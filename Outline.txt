@@ -32,8 +32,6 @@ Primer color = #0b429c  -->   --accent-color: #0b429c
 Secondary color = #072352 
 Bottom background color = #7facf5 
 	#5b5b5b  --> #072352  
-make better ondinde
-logo 
-fix image size: when screen size get small the pic doesnt resize dynamically
-
+logo
+ondine to center
 
