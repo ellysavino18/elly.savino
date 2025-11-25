@@ -1,0 +1,39 @@
+https://bootstrapmade.com/demo/Strive/
+	- General structure
+	- Services leads to other links
+
+
+http://bootstrapmade.com/demo/EasyFolio/
+	- [Section]: About
+	- [Section]: Resume
+	- [Section]: Testimonials
+	- [Section]: Footer
+
+
+https://bootstrapmade.com/demo/Devin/
+	- [Section]: Testimonials
+
+
+
+CORE: 
+-- Hero
+-- About
+-- Resume
+-- Portfolio (+ Experiences, Projects)
+-- Testimonials
+-- Partner logos (tag Clients)
+-- Contacts
+-- Footer
+
+
+EDITS TODO:
+Refine colors:
+Primer color = #0b429c  -->   --accent-color: #0b429c
+Secondary color = #072352 
+Bottom background color = #7facf5 
+	#5b5b5b  --> #072352  
+make better ondinde
+logo 
+fix image size: when screen size get small the pic doesnt resize dynamically
+
+
