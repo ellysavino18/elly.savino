@@ -592,6 +592,7 @@ h6 {
 
 .footer .copyright p {
   margin-bottom: 0;
+  font-size: 0px;
 }
 
 .footer .social-links {
@@ -617,9 +618,14 @@ h6 {
   border-color: var(--accent-color);
 }
 
+.footer .elly-copy {
+  margin-top: 10px;
+  font-size: 8px;
+}
+
 .footer .credits {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 0px;
   text-align: center;
 }
 
@@ -1064,7 +1070,7 @@ section,
 }
 
 .about .signature .signature-image {
-  max-width: 150px;
+  max-width: 300px;
 }
 
 .about .signature .signature-info h4 {
