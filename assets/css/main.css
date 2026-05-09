@@ -166,6 +166,29 @@ h6 {
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+/* Smooth transition for the logo color */
+.nav-logo {
+  transition: filter 0.3s ease-in-out;
+}
+
+/* When the header gets the 'scrolled' class (turns white), invert the logo color to dark! */
+.header.scrolled .nav-logo {
+  /* Inverts the light colors to dark, making it visible on a white background */
+  filter: invert(100%) hue-rotate(180deg) brightness(50%);
+}
+
+.portfolio-details-page .nav-logo {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(45%) saturate(3946%) hue-rotate(200deg) brightness(95%) contrast(105%);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Targeting both body.scrolled and header.scrolled to be safe */
+.portfolio-details-page.scrolled .nav-logo,
+.portfolio-details-page .scrolled .nav-logo,
+.portfolio-details-page .header.scrolled .nav-logo {
+  filter: none !important;
+}
+
 .header .logo {
   line-height: 1;
 }
