@@ -778,6 +778,9 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-title h2 {
@@ -789,6 +792,7 @@ section,
   -webkit-text-fill-color: transparent;
   background-clip: text;
   position: relative;
+  display: inline-block;
 }
 
 .section-title .title-shape {
@@ -2239,6 +2243,9 @@ section,
 }
 
 .portfolio .portfolio-card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
   background-color: var(--surface-color);
   border-radius: 10px;
   overflow: hidden;
@@ -2263,11 +2270,13 @@ section,
 .portfolio .portfolio-card .portfolio-img {
   position: relative;
   overflow: hidden;
+  height: 300px;
 }
 
 .portfolio .portfolio-card .portfolio-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
@@ -2306,6 +2315,10 @@ section,
 
 .portfolio .portfolio-card .portfolio-info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .portfolio .portfolio-card .portfolio-info h4 {

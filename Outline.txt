@@ -32,6 +32,14 @@ Primer color = #0b429c  -->   --accent-color: #0b429c
 Secondary color = #072352 
 Bottom background color = #7facf5 
 	#5b5b5b  --> #072352  
-logo
-ondine to center
 
+- logo
+- Add main pics for the first page
+- footers? 
+
+
+Projects pages:
+- troppo spazio bianco tra il titolo principale e la parte sotto
+- Add links in the buttoms tags
+- MSc: Supervised by Marta Coll and Danovaro
+- Projects supervisioned by Prof ...
