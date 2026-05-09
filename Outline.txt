@@ -39,6 +39,4 @@ Bottom background color = #7facf5
 
 
 Projects pages:
-- Add links in the buttoms tags
-- MSc: Supervised by Marta Coll and Danovaro
 - Projects supervisioned by Prof ...
