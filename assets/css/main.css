@@ -166,6 +166,29 @@ h6 {
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+/* Smooth transition for the logo color */
+.nav-logo {
+  transition: filter 0.3s ease-in-out;
+}
+
+/* When the header gets the 'scrolled' class (turns white), invert the logo color to dark! */
+.header.scrolled .nav-logo {
+  /* Inverts the light colors to dark, making it visible on a white background */
+  filter: invert(100%) hue-rotate(180deg) brightness(50%);
+}
+
+.portfolio-details-page .nav-logo {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(45%) saturate(3946%) hue-rotate(200deg) brightness(95%) contrast(105%);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Targeting both body.scrolled and header.scrolled to be safe */
+.portfolio-details-page.scrolled .nav-logo,
+.portfolio-details-page .scrolled .nav-logo,
+.portfolio-details-page .header.scrolled .nav-logo {
+  filter: none !important;
+}
+
 .header .logo {
   line-height: 1;
 }
@@ -778,6 +801,9 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-title h2 {
@@ -789,6 +815,7 @@ section,
   -webkit-text-fill-color: transparent;
   background-clip: text;
   position: relative;
+  display: inline-block;
 }
 
 .section-title .title-shape {
@@ -2239,6 +2266,9 @@ section,
 }
 
 .portfolio .portfolio-card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
   background-color: var(--surface-color);
   border-radius: 10px;
   overflow: hidden;
@@ -2263,11 +2293,13 @@ section,
 .portfolio .portfolio-card .portfolio-img {
   position: relative;
   overflow: hidden;
+  height: 300px;
 }
 
 .portfolio .portfolio-card .portfolio-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
@@ -2306,6 +2338,10 @@ section,
 
 .portfolio .portfolio-card .portfolio-info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .portfolio .portfolio-card .portfolio-info h4 {

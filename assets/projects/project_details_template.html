@@ -10,8 +10,8 @@
   <base href="/../">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/icons/favicon.png" rel="icon" type="image/png">
+  <link href="assets/img/icons/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -39,57 +39,38 @@
 
 <body class="portfolio-details-page">
 
-<header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="container position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
 
-    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <!-- <img src="assets/img/logo.webp" alt="Logo"> FIXME: image logo here-->
-      <h1 class="sitename">Eleonora</h1><span>.</span>
-    </a>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/icons/logo-light.png" alt="Geometric Nautilus Logo" class="nav-logo" style="max-height: 45px; margin-right: 10px;">
+        <h1 class="sitename">Eleonora</h1>
+      </a>
 
-    <nav id="navmenu" class="navmenu text-center">
-      <ul>
-        <li><a href="#hero" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <nav id="navmenu" class="navmenu text-center">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li style="display: none;"><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
 
-        <!-- <li><a href="blog.html">Blog</a></li>  TODO: add reference to blog post-->
-
-
-        <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
-  </div>
-</header>
+          <!-- <li><a href="blog.html">Blog</a></li>  TODO: add reference to blog post-->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
 
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title">
-      <div class="heading">
+      <div class="heading pb-2">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
+            <div class="col-lg-8 pt-2">
               <h1 class="heading-title">Project Details</h1>
               <p class="mb-0">
                 Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
@@ -101,7 +82,7 @@
           </div>
         </div>
       </div>
-      <nav class="breadcrumbs">
+      <nav class="breadcrumbs mb-0 pt-1">
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -157,6 +138,7 @@
               </div>
             </div>
 
+            
             <div class="project-description">
               <h2>Project Overview</h2>
               <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
@@ -222,56 +204,54 @@
                   <span class="tech-tag">TypeScript</span>
                 </div>
               </div>
-
             </div>
-
           </div>
 
           <div class="col-lg-4">
-            <div class="project-info-card" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Information</h3>
+            <div style="position: sticky; top: 120px; z-index: 10;">
+              <div class="project-info-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Project Information</h3>
 
-              <div class="info-item">
-                <h4>Client</h4>
-                <p>TechStart Solutions Inc.</p>
-              </div>
+                <div class="info-item">
+                  <h4>Client</h4>
+                  <p>TechStart Solutions Inc.</p>
+                </div>
 
-              <div class="info-item">
-                <h4>Project Type</h4>
-                <p>Web Application Development</p>
-              </div>
+                <div class="info-item">
+                  <h4>Project Type</h4>
+                  <p>Web Application Development</p>
+                </div>
 
-              <div class="info-item">
-                <h4>Duration</h4>
-                <p>6 Months</p>
-              </div>
+                <div class="info-item">
+                  <h4>Duration</h4>
+                  <p>6 Months</p>
+                </div>
 
-              <div class="info-item">
-                <h4>Team Size</h4>
-                <p>8 Developers</p>
-              </div>
+                <div class="info-item">
+                  <h4>Team Size</h4>
+                  <p>8 Developers</p>
+                </div>
 
-              <div class="info-item">
-                <h4>Launch Date</h4>
-                <p>March 2024</p>
-              </div>
+                <div class="info-item">
+                  <h4>Launch Date</h4>
+                  <p>March 2024</p>
+                </div>
 
-              <div class="info-item">
-                <h4>Project URL</h4>
-                <p><a href="https://example.com" target="_blank">Visit Live Site <i class="bi bi-arrow-up-right"></i></a></p>
-              </div>
+                <div class="info-item">
+                  <h4>Project URL</h4>
+                  <p><a href="https://example.com" target="_blank">Visit Live Site <i class="bi bi-arrow-up-right"></i></a></p>
+                </div>
 
-              <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">
-                  <i class="bi bi-download"></i>
-                  Download Case Study
-                </a>
-                <a href="#" class="btn btn-outline">
-                  <i class="bi bi-share"></i>
-                  Share Project
-                </a>
-              </div>
-
+                <div class="cta-buttons">
+                  <a href="#" class="btn btn-primary">
+                    <i class="bi bi-download"></i>
+                    Download Case Study
+                  </a>
+                  <a href="#" class="btn btn-outline">
+                    <i class="bi bi-share"></i>
+                    Share Project
+                  </a>
+                </div>
             </div>
 
             <div class="project-stats-card" data-aos="fade-up" data-aos-delay="300">
@@ -297,8 +277,8 @@
                 </div>
                 <div class="stat-label">Conversion Rate Increase</div>
               </div>
-
             </div>
+
 
             <div class="related-projects" data-aos="fade-up" data-aos-delay="400">
               <h3>Related Projects</h3>
@@ -320,39 +300,60 @@
                   <a href="#" class="related-link">View Project <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-
             </div>
 
           </div>
-
         </div>
-
       </div>
 
     </section><!-- /Portfolio Details Section -->
-
   </main>
-<footer id="footer" class="footer light-background">
 
-  <div class="container">
-    <div class="copyright text-center ">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
-    </div>
-    <div class="elly-copy text-center ">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">EllySavino</strong> <span>All Rights Reserved</span></p>
-    </div>
-    <div class="social-links d-flex justify-content-center"> <!-- TODO: fill links-->
-      <a href=""><i class="bi bi-twitter-x"></i></a>
-      <a href=""><i class="bi bi-facebook"></i></a>
-      <a href=""><i class="bi bi-instagram"></i></a>
-      <a href=""><i class="bi bi-linkedin"></i></a>
-    </div>
-    <div class="credits">
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-  </div>
+  
+<footer id="footer" class="footer light-background pt-5 pb-3">
+      <div class="container">
+        <div class="row gy-4 border-bottom pb-0 mb-2">
+          
+          <div class="col-lg-5 col-md-12 pe-lg-5">
+            <h4 class="sitename mb-3 fw-bold">Eleonora C. Savino</h4>
+            <p class="text-muted mb-3">
+              A dedicated Marine Biologist specializing in trophic ecology, spatial analysis, and conservation. 
+              Currently seeking research assistantships, PhD opportunities, or field biologist roles.
+            </p>
+            
+            <a href="assets/docs/Eleonora_Savino_CV.pdf" target="_blank" class="btn btn-outline-primary btn-sm shadow-sm btn-light">
+              <i class="bi bi-file-earmark-pdf me-1"></i> Download Full CV
+            </a>
 
-</footer>
+            </div>
+          
+          <div class="col-lg-3 col-6">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><i class="bi bi-chevron-right text-primary me-2" style="font-size: 0.8rem;"></i> <a href="index.html#about" class=" text-muted">About Me</a></li>
+              <li class="mb-2"><i class="bi bi-chevron-right text-primary me-2" style="font-size: 0.8rem;"></i> <a href="index.html#resume" class=" text-muted">Curriculum Vitae</a></li>
+              <li class="mb-2"><i class="bi bi-chevron-right text-primary me-2" style="font-size: 0.8rem;"></i> <a href="index.html#portfolio" class=" text-muted">Research Portfolio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-6">
+            <h5 class="mb-3">Get in Touch</h5>
+            <p class="text-muted mb-1"><i class="bi bi-geo-alt text-primary me-2"></i> Barcelona, Spain (Willing to relocate)</p>
+            <p class="text-muted mb-3"><i class="bi bi-clock text-primary me-2"></i> Open to international projects</p>
+          </div>
+          
+        </div>
+
+        <div class="row text-center">
+          <div class="col-12">
+            <p class="mb-1 text-muted">© <span>Copyright</span> <strong class="px-1">Eleonora C. Savino</strong> <span>All Rights Reserved</span></p>
+            <div class="credits text-muted" style="font-size: 0.8rem;">
+              Designed by <a href="https://bootstrapmade.com/" class="text-muted text-decoration-underline">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 <!-- Scroll Top -->
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
